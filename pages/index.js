@@ -1,8 +1,10 @@
 
+
 import Layout from '../components/Layout'
 
 export default() => (
    <Layout>
+
      <div className='about-me-page'>
          <h1>About Me</h1>
          <p>I'm a full-stack web developer based in Cape Town. I previously worked in the automotive industry as a machine setter and shift leader for several years. In2019 I started my career in web development and fell in love with seeing my work come to life. If I'm not coding I enjoy traveling and meeting new people.

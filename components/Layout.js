@@ -12,7 +12,8 @@ const contentContainer = {
    width: "720px",
    margin: "auto",
    height: "80vh",
-   margin: "20px"
+   margin: "20px",
+   overflow: "hidden"
 }
 
 export default(props) => {
