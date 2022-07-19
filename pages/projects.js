@@ -21,7 +21,7 @@ const projects = [
 
          const list = projects.map(item =>(
             <div className="card">
-               <img src={item.pics} alt="screenshot" width={300} height={300}/>
+               <img src={item.pics} alt="screenshot"/>
                <div className="container">
                   <h4><b>{item.name}</b></h4> 
                   <p>{item.des}</p> 
