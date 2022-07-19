@@ -1,8 +1,7 @@
 
 import Link from "next/link";
 import Head from "next/head"
-
-
+import { Router } from "next/router";
 const contentContainer = {
    border: "1px solid #2a2a2a",
    boxShadow: "0 0 5px #b1b1b1",
@@ -22,17 +21,16 @@ export default(props) => {
              <title>My NEXT Portfolio</title>
             </Head>
          <header class="navigation">
-         <Link href="/">
-                  <a>About Me</a>
-         </Link>
+         <Router href="/" element={<a>About Me</a>}/>
+                  
+      
    
-         <Link href="/projects">
-            <a>Projects</a>
-         </Link>
+         <Router href="/projects" element={<a>Projects</a>}/>
+            
+   
 
-         <Link href="/contact">
-            <a>Contact</a>
-         </Link>
+         <Router href="/contact" element={<a>Contact</a>}/>
+    
         
          <style>{
 

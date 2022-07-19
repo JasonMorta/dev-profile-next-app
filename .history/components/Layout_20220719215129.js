@@ -1,8 +1,6 @@
 
 import Link from "next/link";
 import Head from "next/head"
-
-
 const contentContainer = {
    border: "1px solid #2a2a2a",
    boxShadow: "0 0 5px #b1b1b1",
