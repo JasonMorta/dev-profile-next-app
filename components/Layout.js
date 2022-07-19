@@ -21,7 +21,7 @@ export default(props) => {
             <Head>
              <title>My NEXT Portfolio</title>
             </Head>
-         <header class="navigation">
+         <header className="navigation">
          <Link href="/">
                   <a>About Me</a>
          </Link>
