@@ -4,10 +4,10 @@
   "description": "my-first-next-app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "next dev",
+    "dev": "next dev",
     "build": "next build",
-    "now-build": "next build"
+    "now-build": "next build",
+    "start": "next start"
   },
   "author": "JMorta",
   "license": "ISC",
