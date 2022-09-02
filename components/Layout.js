@@ -16,7 +16,7 @@ const contentContainer = {
    overflow: "hidden"
 }
 
-export default(props) => {
+function Layout(props) {
    return (
       <div style={contentContainer}>
             <Head>
@@ -27,11 +27,11 @@ export default(props) => {
                   <a>About Me</a>
          </Link>
    
-         <Link href="/projects">
+         <Link href="/Projects">
             <a>Projects</a>
          </Link>
 
-         <Link href="/contact">
+         <Link href="/Contact">
             <a>Contact</a>
          </Link>
         
@@ -127,3 +127,5 @@ export default(props) => {
       </div>
    );
 }
+
+export default Layout;

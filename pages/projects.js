@@ -1,5 +1,6 @@
 
-import Layout from '../components/Layout'
+import Layout from '../components/Layout';
+import Image from 'next/image'
 
 const projects = [
             {
@@ -19,19 +20,25 @@ const projects = [
             },
          ]
 
-         const list = projects.map(item =>(
-            <div className="card">
-               <img src={item.pics} alt="screenshot"/>
+         const list = projects.map((item, index )=> (
+           
+             <div className="card" key={index}>
+               <Image 
+                  src={item.pics} 
+                  alt="screenshot"
+                  width={500}
+                  height={500}/>
                <div className="container">
                   <h4><b>{item.name}</b></h4> 
                   <p>{item.des}</p> 
                </div>
-               </div>
+            </div>
+            
          ))
 
-export default() => (
-      <Layout>
-
+function Projects() {
+   return   ( 
+   <Layout>
       <div className="project-page">
          <h1>My Projects</h1>
         <div className="all-cards-container">
@@ -41,4 +48,7 @@ export default() => (
         </div>
       </div>
       </Layout>
-   )
+      )
+   }
+
+   export default Projects;

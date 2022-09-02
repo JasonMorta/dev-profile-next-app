@@ -28,4 +28,6 @@ function MyApp({ Component, pageProps}) {
   );
 }
 
+MyApp.displayName = 'portfolio';
+
 export default MyApp;
