@@ -7,11 +7,13 @@ function MyApp({ Component, pageProps}) {
   return ( 
   <>
       <Script
+      id="google-manager"
       strategy='lazyOnload'
       src={"https://www.googletagmanager.com/gtag/js?id=G-EVKQ64QWY7"}
       />
   
       <Script
+      id="window-data"
       strategy='lazyOnload'>
         {
           `window.dataLayer = window.dataLayer || [];
