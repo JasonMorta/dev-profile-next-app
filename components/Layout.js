@@ -128,4 +128,6 @@ function Layout(props) {
    );
 }
 
+Layout.displayName = 'layout';
+
 export default Layout;
